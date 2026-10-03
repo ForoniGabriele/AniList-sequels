@@ -135,6 +135,7 @@ def main():
 
     # Per prendere il token andare all' indirizzo https://anilist.co/settings/developer e creare un client
     # Dopodiche' andare su https://anilist.co/api/v2/oauth/authorize?client_id=IL_TUO_ID&response_type=token sostituisci IL_TUO_ID con quello creato nel link precedente.
+    # Mostrera' un token che devi inserire in una variabile privata di github chiamata ANILIST_TOKEN
     token = os.environ.get("ANILIST_TOKEN")
     if not token:
         sys.exit("Imposta la variabile d'ambiente ANILIST_TOKEN.")
